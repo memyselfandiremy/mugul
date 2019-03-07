@@ -1,0 +1,726 @@
+/********************************************************** FONTS *************************************************************/
+
+@font-face {
+    font-family: 'gentium_book_basicbold';
+    src: url('fonts/genbkbasb.eot');
+    src: url('fonts/genbkbasb.eot?#iefix') format('embedded-opentype'),
+        url('fonts/genbkbasb.woff2') format('woff2'),
+        url('fonts/genbkbasb.woff') format('woff'),
+        url('fonts/genbkbasb.ttf') format('truetype'),
+        url('fonts/genbkbasb.svg#gentium_book_basicbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular.eot');
+    src: url('fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/lato-regular.woff2') format('woff2'),
+        url('fonts/lato-regular.woff') format('woff'),
+        url('fonts/lato-regular.ttf') format('truetype'),
+        url('fonts/lato-regular.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans-bold.eot');
+    src: url('fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/opensans-bold.woff2') format('woff2'),
+        url('fonts/opensans-bold.woff') format('woff'),
+        url('fonts/opensans-bold.ttf') format('truetype'),
+        url('fonts/opensans-bold.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/opensans-italic.eot');
+    src: url('fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/opensans-italic.woff2') format('woff2'),
+        url('fonts/opensans-italic.woff') format('woff'),
+        url('fonts/opensans-italic.ttf') format('truetype'),
+        url('fonts/opensans-italic.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular.eot');
+    src: url('fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/opensans-regular.woff2') format('woff2'),
+        url('fonts/opensans-regular.woff') format('woff'),
+        url('fonts/opensans-regular.ttf') format('truetype'),
+        url('fonts/opensans-regular.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'yeseva_oneregular';
+    src: url('fonts/yesevaone-regular.eot');
+    src: url('fonts/yesevaone-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/yesevaone-regular.woff2') format('woff2'),
+        url('fonts/yesevaone-regular.woff') format('woff'),
+        url('fonts/yesevaone-regular.ttf') format('truetype'),
+        url('fonts/yesevaone-regular.svg#yeseva_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/********************************************************** GENERAL */
+
+
+h2 {
+    font-family: 'yeseva_oneregular';
+    color: #ffffff;
+    /* Blanc */
+    font-size: 36px;
+
+}
+
+p {
+    font-family: 'latoregular';
+    color: #c6c4c4;
+    /* Gris */
+
+}
+
+ul {
+    font-family: 'latoregular';
+    color: white;
+}
+
+.blank {
+    height: 100px;
+}
+
+
+
+/********************************************************** HEADER  *****************************************************************************/
+
+body
+{
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+  /*background: linear-gradient(#000000, #00000009);*/
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+#navbarTogglerDemo01{
+  justify-content: space-between;
+}
+
+header li {
+  margin-right: 25px;
+}
+
+header a {
+  font-family: 'gentium_book_basicbold';
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#header_blank_top {
+    height: 230px;
+}
+
+#header_blank_bottom {
+    height: 145px;
+}
+
+
+#promo h1 {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+    font-family: 'yeseva_oneregular';
+    font-size: 90px;
+    color: white;
+    line-height: 120px;
+    width: 1030px;
+    text-align: center;
+}
+
+#imgu
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 240px;
+}
+
+#button_box
+{
+	display: flex;
+	width: 480px;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+
+.header_button
+{
+	width: 230px;
+	height: 60px;
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header_button p
+{
+	position: relative;
+	top: 9px;
+}
+
+.header_button:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#button1
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#button1:hover
+{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#button2
+{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#button2:hover
+{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/********************************************************** SECTION ABOUT *****************************************************************************/
+
+#about {
+    background: url('images/about_background.jpg');
+    background-size: cover;
+}
+
+#about h2 {
+    font-family: 'yeseva_oneregular';
+    font-size: 36px;
+    width: 370px;
+    text-align: center;
+    font-weight: bold;
+    color: #cc9900;
+}
+
+#about p {
+    font-family: 'latoregular', Arial;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+}
+
+#about .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#about .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#about .imgabout {
+    text-align: center;
+}
+
+#about .cook {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+
+
+/********************************************************** SECTION INGREDIENTS *****************************************************************************/
+
+#ingredients {
+    background: url('images/ingredient_background.jpg');
+    background-size: cover;
+
+
+}
+
+#ingedients_description {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 570px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+}
+
+#ingedients_description h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+
+}
+
+#ingedients_description .image_box {
+    width: 390px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+#ingedients_description p {
+    width: 430px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#ingedients_description ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+#ingedients_description ul li:before {
+    content: '✓';
+}
+
+.mystery_list {
+    display: none;
+}
+
+
+.collapseOne {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+
+/********************************************************** SECTION MENU *****************************************************************************/
+
+#menu {
+    background: url('images/menu_background.jpg');
+    background-size: cover;
+}
+
+#menu h2 {
+    font-family: 'yeseva_oneregular';
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #cc9900;
+}
+
+#menu p {
+    font-family: 'latoregular';
+    color: #4c4c4c;
+}
+
+#menu hr {
+    border-color: #cc9900;
+}
+
+#menu .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#menu .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#menu .noms {
+    font-family: 'yeseva_oneregular';
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc9900;
+}
+
+#menu .imgmenu {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#menu .prix {
+    float: right;
+}
+
+#cf {
+    background-image: url(images/menu_background)
+}
+
+#Starters {
+    margin-bottom: 100px;
+}
+
+#MainDishes {
+    margin-top: -77px;
+}
+
+#Salads {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #MainDishes {
+        margin-top: 45px;
+    }
+
+    #menu .imgmenu {
+        margin-left: 120px;
+        margin-bottom: 20px;
+        color: #d5b764
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #MainDishes {
+        margin-top: 45px;
+    }
+
+    #menu .imgmenu {
+        margin-left: 90px;
+        margin-bottom: 20px;
+        color: #d5b764
+    }
+}
+
+
+
+/********************************************************** SECTION REVIEW *****************************************************************************/
+
+#review {
+    background: url('images/reviews_background.jpg');
+    background-size: cover;
+}
+
+#review_description {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 560px;
+    width: 770px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+#quote {
+    color: #dde0df;
+    font-family: 'gentium_book_basicbold';
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    width: 630px;
+    height: 220px;
+    line-height: 45px;
+    padding-top: 25px;
+
+}
+
+#little_quote {
+    font-size: 30px;
+    color: #8d8f8a;
+    float: left;
+
+}
+
+#citation {
+    color: #dde0df;
+    font-family: 'latoregular';
+    text-align: center;
+    padding-top: 35px;
+}
+
+#review_description h2 {
+    padding-bottom: 10px;
+}
+
+/********************************************************** SECTION RESERVATIONS *****************************************************************************/
+
+#reservation {
+    background: url('images/reservations_background.jpg') repeat;
+    background-size: cover;
+}
+
+#reservation_images {
+    display: flex;
+    width: 570px;
+    height: 510px;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#reservation_text_box {
+    display: flex;
+    justify-content: center;
+    margin-top: -7px;
+}
+
+
+
+#reservation_text {
+    width: 430px;
+}
+
+#reservation_text h2,
+#reservation_text img,
+#reservation_text p {
+    text-align: center;
+}
+
+#reservation_text h2 {
+    color: #cc9900;
+}
+
+#reservation_text p {
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+
+#reservation_text .divider {
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+}
+
+
+#reservation form {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 210px;
+}
+
+#reservation form .first_raw {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin-top: 18px;
+}
+
+#reservation form .second_raw {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin-top: 20px;
+}
+
+
+
+#reservation form input,
+#reservation form select {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #cc9900;
+    border-radius: 0px;
+    width: 200px;
+    height: 35px;
+    margin-top: -5px;
+    color: #7c7c7c;
+    font-size: 16px;
+    font-family: 'open_sansitalic';
+}
+
+#reservation form label {
+    font-family: 'open_sansbold';
+    font-size: 14px;
+    color: #cc9900;
+}
+
+#calendar_form {
+    position: relative;
+}
+
+#calendar {
+    position: absolute;
+    right: 10px;
+    bottom: -4px;
+    z-index: 2;
+    color: #7c7c7c;
+    font-size: 16px;
+
+}
+
+#reservation form button {
+    background-color: #cc9900;
+    border: 1px solid #cc9900;
+    border-radius: 0px;
+    width: 200px;
+    height: 35px;
+    margin: auto;
+}
+
+#reservation form button:hover
+{
+	background-color: #e5b737;
+	border: 1px solid #e5b737;
+}
+
+
+
+/********************************************************** FOOTER *****************************************************************************/
+
+
+footer {
+    background-color: #191919;
+    background-size: cover;
+}
+
+
+.footer_blank {
+    height: 50px;
+}
+
+footer h2 {
+    font-family: 'yeseva_oneregular';
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+footer p,
+footer ul {
+    font-family: 'open_sansregular';
+    font-size: 16px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+footer .divider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer span {
+    font-family: 'open_sansbold';
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover
+{
+	color: #b3b3b3;
+}
+
+
+/* About Us */
+
+#about_us {
+    width: 370px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about_us p {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+/* Opening Hours */
+
+#opening_hours {
+    width: 230px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#opening_hours ul {
+    width: 250px;
+    list-style-type: none;
+}
+
+#cards_box {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#card_element {
+    width: 25px;
+    font-size: 16px;
+
+}
+
+/* Our Location */
+
+#our_location {
+
+    width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+#our_location p {}
+
+#social_networks {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}

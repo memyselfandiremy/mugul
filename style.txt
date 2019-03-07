@@ -1,0 +1,5 @@
+Le jaune : rgb(255, 243, 86)
+Le gris : rgb(120, 120, 120)
+
+
+font : cartoon 123

@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "yes";
+  src: url("fonts/cartoons_123-webfont.ttf");
+}
+@font-face {
+  font-family: "alien";
+  src: url("fonts/Alien Mushrooms.ttf");
+}
+body {
+  color: #fff356;
+  font-family: "yes";
+  text-transform: uppercase;
+  background-image: url(space%20bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 1px 1px 2px black;
+  max-height: 100vh;
+  font-size: 1.5em;
+  text-align: justify;
+  cursor: crosshair;
+  background-position: center;
+  height: 100VH;
+}
+
+/*-------------------------------------------début section header-------------------------------------------*/
+header {
+  height: 100px;
+}
+header #navbar {
+  justify-content: space-around;
+}
+header #navbar #logo {
+  width: 10%;
+  padding: 10px;
+}
+header #navbar h1 {
+  margin-top: 25px;
+  font-family: "alien";
+  font-size: 4em;
+  color: #fff356;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*-----------------------------------------fin section header--------------------------------------*/
+/*-----------------------------------------debut section acceuil--------------------------------------*/
+.expl {
+  object-position: center top;
+  transform-origin: center;
+  transform: perspective(300px) rotateX(25deg);
+  max-height: 200px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  text-align: justify;
+}
+.expl h2 {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+/*-----------------------------------------fin section acceuil--------------------------------------*/
+/*----------------------------------------debut champ de saisie------------------------------------*/
+#jouerG {
+  text-align: center;
+}
+#jouerG #usernbr {
+  background-image: url(button_planete2.png);
+  background-position: LEFT;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  padding: 45px;
+  font-family: "yes";
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 2.5em;
+  color: #fffff3;
+  text-align: left;
+  opacity: 0.8;
+  width: 50%;
+}
+#jouerG #usernbr:hover {
+  opacity: 1;
+}
+#jouerG ::placeholder {
+  color: #fffff3;
+}
+#jouerG :-ms-input-placeholder {
+  color: #fffff3;
+}
+
+/*-------------------------------------------------fin champ de saisie-----------------------------------------*/
+/*--------------------------------------------------debut bouton valider + rejouer-----------------------------------*/
+#jouerD {
+  margin-top: -50px;
+}
+#jouerD .button {
+  background-image: url(button_planete1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  padding: 55px;
+  font-family: "yes";
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 0.8em;
+  color: #fffff3;
+}
+#jouerD .button:hover {
+  cursor: crosshair;
+  opacity: 1;
+}
+
+/*-----------------------------------------------fin bouton valider + rejouer---------------------------------------------------*/
+/*------------------------------------------debut footer------------------------------------------------------------*/
+footer {
+  bottom: 0px;
+  font-size: 0.5em;
+  color: cadetblue;
+  position: absolute;
+  margin-left: 30px;
+}
+footer p {
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+/*------------------------------------------fin footer------------------------------------------------------------*/
+/*------------------------------------------Media queries------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(space%20bg2_mobile.jpg);
+  }
+
+  header {
+    height: 70px;
+    background: #25164f;
+  }
+  header #navbar h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+  }
+
+  .expl {
+    font-size: 0.8em;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  #jouerG label {
+    font-size: 0.8em;
+  }
+  #jouerG #usernbr {
+    width: 69%;
+    font-size: 1.4em;
+  }
+
+  #jouerD {
+    margin-top: 0;
+  }
+
+  #error {
+    font-size: 0.6em;
+    width: 75%;
+  }
+
+  footer {
+    background: #33174a;
+  }
+  footer p {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header #navbar #logo {
+    width: 15%;
+  }
+  header #navbar h1 {
+    font-size: 2em;
+  }
+
+  #acceuil {
+    margin-top: -40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  body {
+    background-size: auto;
+    background-position: initial;
+  }
+
+  header #navbar #logo .logo {
+    margin-left: 13px;
+  }
+  header #navbar h1 {
+    font-size: 1.7em;
+    margin-top: 10px;
+  }
+
+  #accueil {
+    margin-top: -51px;
+  }
+
+  .expl {
+    font-size: 0.6em;
+  }
+
+  #jouerG #usernbr {
+    width: 100%;
+  }
+
+  #error {
+    width: 100%;
+  }
+
+  footer {
+    position: fixed;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
